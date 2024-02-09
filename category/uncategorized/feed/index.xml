@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>Uncategorized &#8211; 闲敲@拖雷</title>
-	<atom:link href="http://localhost/category/uncategorized/feed/?simply_static_page=122" rel="self" type="application/rss+xml" />
+	<title>samples &#8211; 闲敲@拖雷</title>
+	<atom:link href="http://localhost/category/uncategorized/feed/?simply_static_page=290" rel="self" type="application/rss+xml" />
 	<link>https://wp.bayx.uk/</link>
 	<description>同是天涯沦落人，江枫渔火对愁眠，梦里不知身是客，此心安处是吾乡</description>
-	<lastBuildDate>Fri, 09 Feb 2024 13:15:13 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 09 Feb 2024 17:46:47 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,13 +20,83 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.4.3</generator>
 	<item>
+		<title>从localhost到cloudflare CDN的作者完全掌控的免费自媒体wordpress发布流程</title>
+		<link>https://wp.bayx.uk/%e4%bb%8elocalhost%e5%88%b0cloudflare-cdn%e7%9a%84%e4%bd%9c%e8%80%85%e5%ae%8c%e5%85%a8%e6%8e%8c%e6%8e%a7%e7%9a%84%e5%85%8d%e8%b4%b9%e8%87%aa%e5%aa%92%e4%bd%93wordpress%e5%8f%91%e5%b8%83%e6%b5%81/</link>
+					<comments>https://wp.bayx.uk/%e4%bb%8elocalhost%e5%88%b0cloudflare-cdn%e7%9a%84%e4%bd%9c%e8%80%85%e5%ae%8c%e5%85%a8%e6%8e%8c%e6%8e%a7%e7%9a%84%e5%85%8d%e8%b4%b9%e8%87%aa%e5%aa%92%e4%bd%93wordpress%e5%8f%91%e5%b8%83%e6%b5%81/#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 09 Feb 2024 17:46:47 +0000</pubDate>
+				<category><![CDATA[samples]]></category>
+		<guid isPermaLink="false">https://wp.bayx.uk/?p=17</guid>
+
+					<description><![CDATA[看到这个文章就是这么发出来的. localWP（localhost wordpress deployment）+simply static plugin + github +cloudflare page&#8230;. 这是简单公式. 自媒体的大部分是文科生，下面是详细的解说. 一：起源 源于对localCDN 想法和项目的搜索查询，找到了这个方案. 用了几次cloudflare之后，想到用它的cdn 网络服务，构想完全自主掌控的自媒体发布平台， 本地localhost 服务器发布，与网络静态cdn同步就可以了。 最后： 我想这个时代很多人都深刻怀疑网络平台的“居心叵测”，这个方案可以彻底让自媒体博主安心了。完全在自有的机器上操作，不受任何奸商的气。我猜这应该很打动人吧，特别是现在，特别是不懂技术有脾气很固执的文科博主们。]]></description>
+										<content:encoded><![CDATA[
+<p>看到这个文章就是这么发出来的.</p>
+
+
+
+<p>localWP（localhost wordpress deployment）+simply static plugin + github +cloudflare page&#8230;.</p>
+
+
+
+<p>这是简单公式. 自媒体的大部分是文科生，下面是详细的解说.</p>
+
+
+
+<p>一：起源</p>
+
+
+
+<p>源于对localCDN 想法和项目的搜索查询，找到了这个方案.</p>
+
+
+
+<p>用了几次cloudflare之后，想到用它的cdn 网络服务，构想完全自主掌控的自媒体发布平台，</p>
+
+
+
+<p>本地localhost 服务器发布，与网络静态cdn同步就可以了。</p>
+
+
+
+<ol>
+<li> 与在线部署wordpress或者其他CMS内容平台相比， 建立在本地自己主机上，不仅免费，而且完全不被服务商绑架&#8230;.</li>
+
+
+
+<li>cloudflare 提供强大扩展的分发服务，本身虽然只是CDN缓存和访问加速服务，额外的安全服务更保障了发布风险。</li>
+
+
+
+<li>wordpress 超级生态的好处太多了，本地host之后，可以同步所有社交媒体，更可以多个实例发布，<br>教程和工具在网络上都是海量的，也不用担心可持续性，这么大的生态未来升级和迁移都一定有各种选择。<br></li>
+
+
+
+<li>就算是最不熟悉技术的媒体作者，应该也了解wordpress的用法&#8230;.，学起来也很容易。<br></li>
+
+
+
+<li>流程是完全自动的，几乎不会用到任何代码甚至命令行工作就全部完成了。<br><br><br>二：实现的步骤细节.<br><br>1. 本地wordpress部署， 我选择了localWP， 这是wpengine公司开发的集成包，本身包含本地server和wordpress，当然包含相关的mysql数据库。<br> 类似方案非常多，包括xamp，mamp，wamp等，都是为了方便本地开发php而打造的集成包.<br> localWP 的好处是界面易用，非常适合非技术用户.<br><br>2. 静态化插件 simply static：<br>    本身 这是一家做动态网络应用静态化的厂家，针对使用广泛的wordpress开发了 simplystatic 插件，只需要在wordpress的管理后台安装就可以静态化wordpress， 生成一套没有动态程序的网站页面.<br><br>3. github 与cloudflare.<br><br>   cloufdlare的pages静态发布功能提供了免费服务，可以发布静态内容， 并与github合作自动发布。<br>  在simply static 把wordpress网站内容发布为静态页面之后， 提交github，就可以自动更新到cloudflare的内容CDN网络，提供全球用户访问了。 <br><br>  cloudflare也提供域名注册和绑定服务，所以在群里噌了一个二级域名，直接绑定在他提供的静态空间，后台配置也非常流畅.<br>就这样一个本地管理和发布，静态化生成网站 ，并利用github静态提交到免费的CDN上的流程就全部跑通了。<br></li>
+</ol>
+
+
+
+<p>最后： 我想这个时代很多人都深刻怀疑网络平台的“居心叵测”，这个方案可以彻底让自媒体博主安心了。<br>完全在自有的机器上操作，不受任何奸商的气。我猜这应该很打动人吧，特别是现在，特别是不懂技术有脾气很固执的文科博主们。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://wp.bayx.uk/%e4%bb%8elocalhost%e5%88%b0cloudflare-cdn%e7%9a%84%e4%bd%9c%e8%80%85%e5%ae%8c%e5%85%a8%e6%8e%8c%e6%8e%a7%e7%9a%84%e5%85%8d%e8%b4%b9%e8%87%aa%e5%aa%92%e4%bd%93wordpress%e5%8f%91%e5%b8%83%e6%b5%81/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Hello world!</title>
 		<link>https://wp.bayx.uk/hello-world/</link>
 					<comments>https://wp.bayx.uk/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 09 Feb 2024 13:15:13 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
+				<category><![CDATA[samples]]></category>
 		<guid isPermaLink="false">https://wp.bayx.uk/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
