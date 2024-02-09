@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title>散指闲敲 by 拖雷</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=343" rel="self" type="application/rss+xml" />
+	<title>散指闲敲 &#8211; 散指闲敲 by 拖雷</title>
+	<atom:link href="http://localhost/category/%E6%95%A3%E6%8C%87%E9%97%B2%E6%95%B2/feed/?simply_static_page=381" rel="self" type="application/rss+xml" />
 	<link>https://wp.bayx.uk/</link>
 	<description>散指闲敲 by 拖雷 </description>
 	<lastBuildDate>Fri, 09 Feb 2024 18:00:25 +0000</lastBuildDate>
@@ -22,7 +22,7 @@
 
 <image>
 	<url>https://wp.bayx.uk/wp-content/uploads/2024/02/cropped-WeChat10fc2ea06ca0b807b0399d58ad7c7109-1-32x32.png</url>
-	<title>散指闲敲 by 拖雷</title>
+	<title>散指闲敲 &#8211; 散指闲敲 by 拖雷</title>
 	<link>https://wp.bayx.uk/</link>
 	<width>32</width>
 	<height>32</height>
@@ -94,26 +94,6 @@
 					
 					<wfw:commentRss>https://wp.bayx.uk/%e4%bb%8elocalhost%e5%88%b0cloudflare-cdn%e7%9a%84%e4%bd%9c%e8%80%85%e5%ae%8c%e5%85%a8%e6%8e%8c%e6%8e%a7%e7%9a%84%e5%85%8d%e8%b4%b9%e8%87%aa%e5%aa%92%e4%bd%93wordpress%e5%8f%91%e5%b8%83%e6%b5%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Hello world!</title>
-		<link>https://wp.bayx.uk/hello-world/</link>
-					<comments>https://wp.bayx.uk/hello-world/#comments</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Fri, 09 Feb 2024 13:15:13 +0000</pubDate>
-				<category><![CDATA[samples]]></category>
-		<guid isPermaLink="false">https://wp.bayx.uk/?p=1</guid>
-
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
-										<content:encoded><![CDATA[
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://wp.bayx.uk/hello-world/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>
