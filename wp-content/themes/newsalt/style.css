@@ -1,0 +1,136 @@
+/*
+Theme Name: 	   NewsAlt
+Text Domain: 	   newsalt
+Template: 			newsmash
+Version:            0.3
+Tested up to:       6.4
+Requires at least:  4.7
+Requires PHP:       7.0
+Author:             DesertThemes
+Author URI:         https://desertthemes.com/
+Theme URI:          https://desertthemes.com/themes/newsalt-free/
+Description:        NewsAlt is a fast, clean, Best Responsive News Magazine WordPress theme. NewsAlt is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. With its modern and clean design, NewsAlt offers a visually appealing layout that is easy to navigate, making it ideal for delivering content to your readers. This theme comes equipped with a range of customizable options, custom widgets, and color schemes, allowing you to tailor your website to your specific needs and branding. It also supports various post formats, making it easy to present a variety of content types, from articles and videos to images and galleries. NewsAlt is optimized for speed and SEO, ensuring that your website loads quickly and ranks well in search engine results. Its responsive design ensures that your content looks great on all devices, whether it's a desktop computer, tablet, or smartphone. NewsAlt demos https://preview.desertthemes.com/newsmash/
+Tags:               blog, e-commerce, entertainment, grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-logo, custom-menu, featured-images, featured-image-header, flexible-header, post-formats, rtl-language-support, translation-ready, theme-options, threaded-comments, footer-widgets
+License: GPLv3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+ */
+ 
+ :root {
+    --dt-main-rgb: 2, 131, 131;
+    --dt-black-color: #0a1233;
+}
+
+/* Header 6  */
+.header--six + .mainfeatured_section {
+    margin-top: 2rem;
+}
+
+.header--six .dt_navbar-menus {
+    background-color: var(--dt-main-color);
+}
+
+.header--six .dt_navbar-menus .dt_navbar-list-right>li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.header--six .dt_navbar-menu {
+    padding: 0;
+    min-height: 6rem;
+    justify-content: space-between;
+}
+
+.header--six .dt_navbar-wrapper.is--sticky.on .dt-row.dt-py-3 {
+    display: none;
+}
+
+
+.header--six .dt_navbar-menu .dt_navbar-cart-item .dt_navbar-cart-icon,
+.header--six .dt_navbar-menu .dt_navbar-search-item button.dt_navbar-search-toggle {
+    background: transparent;
+    width: 3rem;
+    height: 3rem;
+    line-height: normal;
+    padding: 0;
+    box-shadow: none;
+}
+
+.header--six .dt_navbar-nav .dt_navbar-mainmenu>.menu-item-has-children>a:after,
+.header--six .dt_navbar-nav .dt_navbar-mainmenu>li>a,
+.header--six .dt_navbar-nav .dt_navbar-mainmenu>li.active>a,
+.header--six .dt_navbar-nav .dt_navbar-mainmenu>li.focus>a,
+.header--six .dt_navbar-nav .dt_navbar-mainmenu>li:hover>a {
+    color: #fff;
+}
+
+.header--six.menu_active-two .dt_navbar-nav .dt_navbar-mainmenu>li>a::before {
+    background: #fff;
+}
+
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li>a {
+    padding: 1rem 1.4rem;
+    line-height: 1.5;
+}
+
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li.active>a,
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li.current-menu-item>a,
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li.current_page_item>a,
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li.current-menu-ancestor>a {
+    background-color: #fff;
+    color: var(--dt-main-color);
+}
+
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>.menu-item-has-children.current-menu-ancestor>a:after,
+.header--six.menu_active-three .dt_navbar-nav .dt_navbar-mainmenu>li.active>a:after {
+    color: var(--dt-main-color);
+}
+
+.header--six .dt_navbar-button-item .dt-btn.dt-btn-primary:after {
+    background: var(--dt-black-color);
+}
+
+.dt_navbar-cart-item .cart_count {
+    top: -0.8rem;
+    right: -1.1rem;
+}
+
+/* Header Menu Active */
+.menu_active-two .dt_navbar-nav .dt_navbar-mainmenu>li>a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0.7rem;
+    top: 1.2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--dt-main-color);
+    border-radius: 0.5rem;
+    transform: scale(0);
+    transition: all .35s ease-in-out;
+}
+
+.menu_active-two .dt_navbar-nav .dt_navbar-mainmenu>li.active>a::before,
+.menu_active-two .dt_navbar-nav .dt_navbar-mainmenu>li.focus>a::before,
+.menu_active-two .dt_navbar-nav .dt_navbar-mainmenu>li:hover>a::before {
+    transform: scale(1)
+}
+
+
+.mainfeatured_section.style-7 .post_columns-grid {
+    grid-template-columns: auto;
+}
+
+.mainfeatured_section.style-7 .post_columns-grid {
+	grid-gap: 2rem;
+}
+
+.mainfeatured_section.style-7 .post_columns-grid .post .thumb .inner {
+    height: 247px;
+}
+
+.wp-block-woocommerce-empty-mini-cart-contents-block .wc-block-mini-cart__empty-cart-wrapper p strong {
+    font-size: 16px;
+}
